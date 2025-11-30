@@ -2,7 +2,7 @@
 	<div>
 		<div v-if="myCourses.data?.length" class="mt-10">
 			<div class="flex items-center justify-between mb-3">
-				<span class="font-semibold text-lg text-ink-gray-9">
+				<span class="font-semibold text-lg text-humain-gray-800">
 					{{
 						myCourses.data[0].membership
 							? __('My Courses')
@@ -14,7 +14,7 @@
 						name: 'Courses',
 					}"
 				>
-					<span class="flex items-center space-x-1 text-ink-gray-5 text-xs">
+					<span class="flex items-center space-x-1 link-humain text-xs hover:text-humain-primary-dark">
 						<span>
 							{{ __('See all') }}
 						</span>

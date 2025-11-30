@@ -23,7 +23,7 @@ sed -i '/redis/d' ./Procfile
 sed -i '/watch/d' ./Procfile
 
 # Get the LMS app from your repository
-bench get-app lms https://github.com/MuhammadSaeedMBZUAI/lms.git --branch main
+bench get-app lms https://github.com/MuhammadSaeedMBZUAI/lms.git --branch develop
 
 # Install the app in the bench environment
 cd apps/lms && pip install -e . && cd ../..

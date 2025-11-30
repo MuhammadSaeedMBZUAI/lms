@@ -1,7 +1,7 @@
 <template>
 	<div
 		v-if="course.title"
-		class="flex flex-col h-full rounded-md overflow-auto text-ink-gray-9"
+		class="flex flex-col h-full rounded-md overflow-auto text-humain-gray-800 hover:shadow-lg transition-shadow duration-200"
 		style="min-height: 350px"
 	>
 		<div
@@ -47,7 +47,7 @@
 				{{ course.title }}
 			</div>
 		</div>
-		<div class="flex flex-col flex-auto p-4 border-x-2 border-b-2 rounded-b-md">
+		<div class="flex flex-col flex-auto p-4 border-x-2 border-b-2 border-humain-gray-200 rounded-b-md">
 			<div class="flex items-center justify-between mb-2">
 				<div v-if="course.lessons">
 					<Tooltip :text="__('Lessons')">
@@ -77,7 +77,7 @@
 				</div>
 
 				<Tooltip v-if="course.featured" :text="__('Featured')">
-					<Award class="size-4 stroke-2 text-ink-amber-3" />
+					<Award class="size-4 stroke-2 text-humain-warning" />
 				</Tooltip>
 			</div>
 
@@ -117,7 +117,7 @@
 				</div>
 
 				<div class="flex items-center space-x-2">
-					<div v-if="course.paid_course" class="font-semibold">
+					<div v-if="course.paid_course" class="font-semibold text-humain-primary">
 						{{ course.price }}
 					</div>
 
@@ -125,7 +125,7 @@
 						v-if="course.paid_certificate || course.enable_certification"
 						:text="__('Get Certified')"
 					>
-						<GraduationCap class="size-5 stroke-1.5 text-ink-gray-7" />
+						<GraduationCap class="size-5 stroke-1.5 text-humain-secondary" />
 					</Tooltip>
 				</div>
 			</div>

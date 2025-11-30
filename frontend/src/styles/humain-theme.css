@@ -1,0 +1,42 @@
+/* Humain Brand Theme */
+:root {
+  /* Primary Colors */
+  --humain-primary: #2563eb;
+  --humain-primary-light: #3b82f6;
+  --humain-primary-dark: #1d4ed8;
+  
+  /* Secondary Colors */
+  --humain-secondary: #7c3aed;
+  --humain-secondary-light: #8b5cf6;
+  --humain-secondary-dark: #6d28d9;
+  
+  /* Accent Colors */
+  --humain-accent: #06b6d4;
+  --humain-success: #10b981;
+  --humain-warning: #f59e0b;
+  --humain-error: #ef4444;
+  
+  /* Override Frappe UI variables */
+  --primary: var(--humain-primary);
+  --primary-light: var(--humain-primary-light);
+  --primary-dark: var(--humain-primary-dark);
+}
+
+/* Custom button styles */
+.btn-humain-primary {
+  @apply bg-humain-primary hover:bg-humain-primary-dark text-white;
+}
+
+.btn-humain-secondary {
+  @apply bg-humain-secondary hover:bg-humain-secondary-dark text-white;
+}
+
+/* Custom link styles */
+.link-humain {
+  @apply text-humain-primary hover:text-humain-primary-dark;
+}
+
+/* Custom card styles */
+.card-humain {
+  @apply border-l-4 border-humain-primary;
+}
